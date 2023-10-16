@@ -1,0 +1,257 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins';
+    list-style: none;
+    text-decoration: none;
+    color: #1E1E1E;
+    /* background-color: #F4EDED; */
+    scroll-behavior: smooth;
+    /*font-size: calc(60% + 0.8vmin);*/
+}
+body{
+    background-color: #F4EDED; 
+}
+.PortHeader{
+    width: 100%;
+    min-height: 100vh;
+    padding: 10px 10%;
+}
+.PortHeader nav .texttuii h1{
+    width: 10%;
+    font-size: medium;
+    font-size: 48px;
+}
+nav  {
+    display: flex;
+}
+nav ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px;
+    padding: 0px 50%;
+    gap: 100px;
+}
+nav .navbar-right ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* padding: 10px 30%; */
+}
+nav .navbar-right ul li{
+    display: inline-block;
+    list-style: none;
+    /* margin: 0 34px; */
+}
+nav ul li {
+    font-weight: 400px;
+}
+.wordmyskill h1{
+    letter-spacing: 8px;
+    margin-left: 39%;
+    font-size: 48px;  
+}
+.wordmyskill span{
+    color:  #004EFF;
+}
+.content {
+    width: 100%;
+    height: 850px;
+    display: grid;
+    grid-template-columns: repeat(3, 3fr);
+    gap: 20px;
+    padding: 50px;
+}
+
+.image {
+    position: relative;
+    overflow: hidden;
+}
+
+.image__img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.25s;
+}
+
+.image__overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    /* color: #ffffff; */
+    font-family: 'Quicksand', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.25s;
+}
+
+.image:hover .image__img {
+    transform: scale(1.1);
+}
+
+.image:hover .image__overlay {
+    opacity: 0.7;
+}
+
+.image__overlay--primary {
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.image__overlay>* {
+    transform: translateY(20px);
+    transition: transform 0.25s;
+}
+
+.image:hover .image__overlay>* {
+    transform: translateY(0);
+}
+
+.image__title {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.image__title a{
+    color: #ffffff;
+}
+
+.image__description {
+    font-size: 1em;
+    margin-top: 0.25em;
+}
+
+.double-box {
+    grid-column: span 1;
+    display: flex;
+    gap: 20px;
+}
+@media screen and (max-width: 1440px) {
+    nav ul{
+        padding: 10px 10%;
+    }
+    nav ul li {
+        display: inline-block;
+        padding: 0 80px;
+    }
+}
+@media screen and (max-width: 1024px) {
+    nav ul{
+        padding: 10px 10%;
+    }
+    nav ul li {
+        display: inline-block;
+        padding: 0 40px;
+    }
+    .content {
+        width: 100%;
+        height: 650px;
+        display: grid;
+        grid-template-columns: repeat(auto-fit,minmax(210px,auto));
+        margin-left: 0px;
+        gap: 20px;
+    }
+    
+    .image {
+        position: relative;
+        overflow: hidden;
+    }
+    
+    .image__img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform 0.25s;
+    }
+    
+}
+@media screen and (max-width: 768px) {
+    nav ul li{
+        padding: 10px 10%;
+    } 
+    nav ul li {
+        display: inline-block;
+        padding: 0 20px;
+    }
+    .wordmyskill h1{
+        width: 500px;
+        letter-spacing: 8px;
+        margin-left: 200px;
+        font-size: 36px; 
+    }
+    .content {
+        width: 100%;
+        height: 800px;
+        display: grid;
+        grid-template-columns: repeat(auto-fit,minmax(210px,auto));
+        margin-left: 0px;
+        gap: 20px;
+    }
+    
+    .image {
+        position: relative;
+        overflow: hidden;
+    }
+    
+    .image__img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform 0.25s;
+    }
+}
+@media screen and (max-width: 430px) {
+    *{
+        margin-left: 2px;
+    } 
+    h1{
+        padding: 0px 0px 0px 140px ;
+    }
+    nav{
+        display: grid;
+        margin-left: -5px;
+        gap: 20px;
+        grid-template-columns: repeat(auto-fit,minmax(450px,auto)); 
+    }
+    nav ul{
+        padding: 10px 5%;
+    }
+    .wordmyskill h1{
+        width: 500px;
+        letter-spacing: 8px;
+        margin-left: -25px;
+        font-size: 24px; 
+    }
+    .content {
+        width: 100%;
+        height: 1250px;
+        display: grid;
+        grid-template-columns: repeat(auto-fit,minmax(210px,auto));
+        margin-left: 25px;
+        gap: 20px;
+    }
+    
+    .image {
+        position: relative;
+        overflow: hidden;
+    }
+    
+    .image__img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform 0.25s;
+    }
+}

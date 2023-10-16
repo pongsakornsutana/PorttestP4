@@ -1,0 +1,188 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins';
+    list-style: none;
+    text-decoration: none;
+    color: #1E1E1E;
+    background-color: #F4EDED;
+    /*font-size: calc(60% + 0.8vmin);*/
+}
+.PortHeader{
+    width: 100%;
+    min-height: 100vh;
+    padding: 10px 10%;
+}
+.PortHeader nav .texttuii h1{
+    width: 10%;
+    font-size: medium;
+    font-size: 48px;
+}
+nav  {
+    display: flex;
+}
+nav ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px;
+    padding: 0px 50%;
+    gap: 100px;
+}
+nav .navbar-right ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* padding: 10px 30%; */
+}
+nav .navbar-right ul li{
+    display: inline-block;
+    list-style: none;
+    /* margin: 0 34px; */
+}
+nav ul li {
+    font-weight: 400px;
+}
+.Content{
+    margin-top: 10%;
+    margin-left: 50%;
+    margin-bottom: 10%;
+    max-width: 600px;
+}
+.wordaboutme h1{
+    letter-spacing: 8px;
+    margin-left: 43%;
+    font-size: 48px;  
+}
+.wordaboutme span{
+    color:  #004EFF;
+}
+.Content p{
+    font-size: 24px;
+}
+.mypic{
+    width: 550px;
+    border-radius: 140px;
+    position: absolute;
+    bottom: 0.5%;
+    left: 10%;  
+}
+@media screen and (max-width: 1440px) {
+    nav ul{
+        padding: 10px 30%;
+    }
+    .mypic{
+        width: 550px;
+        border-radius: 80px;
+        bottom: 15%;
+        right: 0%;
+    } 
+    .Content p{
+        margin-top: 5%;
+    }
+
+}
+@media screen and (max-width: 1024px) {
+    nav ul{
+        padding: 10px 20%;
+    }
+    .mypic{
+        width: 470px;
+        bottom: 20%; 
+        left: 2%;
+    }
+    .Content .text p{
+        margin-top: 3%;
+    }
+    
+}
+@media screen and (max-width: 768px) {
+    nav ul{
+        padding: 5px 10%;
+    }
+    .wordaboutme h1{
+        letter-spacing: 8px;
+        margin-left: 30%;
+        font-size: 36px;  
+    }
+    .mypic{
+        display: flex;
+        width: 350px;
+        bottom: 50%;
+        left: 25%;  
+    }
+    .Content{
+        margin-top: 65%;
+        margin-left: 0%;
+    }
+    .Content p{
+        font-size: 18px;
+        margin-left: 50px;
+    }
+  
+}
+@media screen and (max-width: 430px) {
+    .texttuii h1{
+        padding: 0px 0px 0px 250px ;
+    }
+    nav{
+        display: grid;
+        margin-left: -15px;
+        gap: 20px;
+        grid-template-columns: repeat(auto-fit,minmax(350px,auto)); 
+    }
+    nav ul{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0px 20%;
+        gap: 80px;
+    }
+    .wordaboutme h1{
+        width: 500px;
+        letter-spacing: 8px;
+        margin-left: 190px;
+        font-size: 24px;  
+    }
+    .mypic{
+        display: flex;
+        width: 300px;
+        bottom: 45%;
+        margin-left: 20%;
+    }
+    .Content{
+        margin-top: 120%;
+        margin-left: 50px;
+    }
+}
+@media screen and (max-width: 380px) {
+    .texttuii h1{
+        padding: 0px 0px 0px 230px ;
+    }
+    nav{
+        display: grid;
+        margin-left: -90px;
+        gap: 20px;
+        grid-template-columns: repeat(auto-fit,minmax(450px,auto)); 
+    }
+    nav ul{
+        padding: 0px 10%;
+    }
+    .wordaboutme h1{
+        width: 500px;
+        letter-spacing: 8px;
+        margin-left: 90px;
+        font-size: 24px;  
+    }
+    .mypic{
+        display: flex;
+        width: 250px;
+        bottom: 50%;
+        margin-left: 0%;
+    }
+    .Content{
+        margin-top: 125%;
+        margin-left: -20px;
+    }
+}

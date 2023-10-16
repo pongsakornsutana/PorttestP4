@@ -1,0 +1,245 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins';
+    list-style: none;
+    text-decoration: none;
+    color: #1E1E1E;
+    background-color: #F4EDED;
+    /*font-size: calc(60% + 0.8vmin);*/
+}
+.PortHeader{
+    width: 100%;
+    min-height: 100vh;
+    padding: 10px 10%;
+}
+.PortHeader nav .texttuii h1{
+    width: 10%;
+    font-size: medium;
+    font-size: 48px;
+}
+nav  {
+    display: flex;
+}
+nav ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px;
+    padding: 0px 50%;
+    gap: 100px;
+}
+.ContentName{
+    margin-top: 10%;
+    max-width: 600px;
+}
+.ContentName p{
+    letter-spacing: 5px;
+    font-size: smaller;
+    font-size: 24px;
+}
+.ContentName h1{
+    letter-spacing: 8px;
+    font-size: medium;
+    font-size: 48px;
+   
+}
+.ContentName span{
+    padding: 50px 15px;
+    border-radius: 560px;
+    color: #F4EDED;
+    background-color: #004EFF;
+}
+.mypic{
+    width: 590px;
+    border-radius: 140px;
+    position: absolute;
+    bottom: 0.2%;
+    right: 3%;  
+}
+.PortHeader .contact a{
+    margin-top: 90%;
+}
+.contact{
+    width: 20%;
+    color: #0e3477;
+
+}
+.contact a{
+    padding: 10px 10%;
+}
+@media screen and (max-width: 1440px) {
+    nav ul{
+        padding: 0px 30%;
+    }
+    .mypic{
+        width: 900px;
+        bottom: 0%;
+        right: 0%;
+    }
+    
+    .ContentName {
+        margin-top: 10%;
+        max-width: 450px;
+    }
+    .PortHeader .contact a{
+        margin-top: 400px;
+    }
+    .contact{
+        width: 40% ;
+        bottom: 40%;
+        left: 10% ;
+        padding: 5px;
+    }
+}
+@media screen and (max-width: 1024px) {
+    nav ul{
+        padding: 0px 20%;
+    }
+    .mypic{
+        width: 500px;
+        bottom: 15%;
+        right: 0%;  
+    }
+    
+    .ContentName {
+        margin-top: 10%;
+        max-width: 450px;
+    }
+    .PortHeader .contact a{
+        margin-top: 450px;
+    }
+    .contact{
+        width: 40% ;
+        bottom: 40%;
+        left: 10% ;
+        padding: 5px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    nav  {
+        display: flex;
+    }
+    nav ul{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 20px;
+        padding: 0px 25%;
+        gap: 80px;
+    }
+    .mypic{
+        display: flex;
+        width: 450px;
+        bottom: 150px;
+        right: 25%;  
+    }
+    
+    .ContentName {
+        margin-top: 10%;
+        max-width: 450px;
+    }
+    .PortHeader .contact a{
+        margin-top: 250%;
+    }
+    .contact{
+        width: 40% ;
+        padding: 5px;
+    }
+}
+@media screen and (max-width: 430px) {
+    body{
+        width: 425px;
+        
+    }
+    h1{
+        padding: 0px 50px 0px 135px ;
+    }
+    nav{
+        display: grid;
+        gap: 20px;
+        grid-template-columns: repeat(auto-fit,minmax(450px,auto)); 
+    }
+    nav ul{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 20px;
+        padding: 0px 5%;
+        gap: 20px;
+    }
+    .ContentName h1 {
+        letter-spacing: 4px;
+        padding: 0px 50px 0px 0px ;
+        font-size: medium;
+        font-size: 36px;
+    }
+    .ContentName span {
+        padding: 50px 15px;
+        border-radius: 20px;
+        color: #F4EDED;
+        background-color: #004EFF;
+    }
+    .mypic{
+        display: flex;
+        width: 250px;
+        bottom: 300px;
+        right: 20%;  
+    }
+    
+    .ContentName {
+        margin-top: 10%;
+        max-width: 450px;
+    }
+    .PortHeader .contact a{
+        margin-top: 180%;
+    }
+    .contact{
+        width: 80% ;
+        padding: 5px;
+    }
+}
+
+@media screen and (max-width: 380px) {
+    h1{
+        padding: 0px 0px 0px 125px ;
+    }
+    nav{
+        display: grid;
+        margin-left: -40px;
+        gap: 20px;
+        grid-template-columns: repeat(auto-fit,minmax(350px,auto)); 
+    }
+    .ContentName h1 {
+        letter-spacing: 4px;
+        padding: 0px 50px 0px 0px ;
+        font-size: medium;
+        font-size: 36px;
+    }
+    .ContentName span {
+        padding: 50px 15px;
+        border-radius: 20px;
+        color: #F4EDED;
+        background-color: #004EFF;
+    }
+    .mypic{
+        display: flex;
+        width: 250px;
+        bottom: 300px;
+        right: 15%;  
+    }
+    
+    .ContentName {
+        margin-top: 10%;
+        max-width: 450px;
+    }
+    .PortHeader .contact a{
+        margin-top: 120%;
+    }
+    .contact{
+        width: 120% ;
+        padding: 5px;
+    }
+}
