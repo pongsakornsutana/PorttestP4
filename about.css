@@ -128,7 +128,6 @@ nav ul li {
     }
     nav{
         display: grid;
-        margin-left: -15px;
         gap: 20px;
         grid-template-columns: repeat(auto-fit,minmax(350px,auto)); 
     }
