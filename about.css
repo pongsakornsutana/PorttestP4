@@ -220,7 +220,7 @@ nav ul li {
     .mypic{
         display: flex;
         width: 250px;
-        bottom: 50%;
+        bottom: 15%;
         margin-left: 0%;
     }
     .Content{
