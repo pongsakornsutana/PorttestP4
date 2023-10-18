@@ -70,36 +70,65 @@ nav ul li {
 }
 @media screen and (max-width: 1440px) {
     nav ul{
-        padding: 10px 30%;
+        padding: 0px 30%;
     }
     .mypic{
         width: 550px;
-        border-radius: 80px;
-        bottom: 15%;
+        bottom: 20%;
         right: 0%;
-    } 
-    .Content p{
-        margin-top: 5%;
+    }
+    
+    .ContentName {
+        margin-top: 10%;
+        max-width: 450px;
+    }
+    .PortHeader .contact a{
+        margin-top: 400px;
+    }
+    .contact{
+        width: 40% ;
+        bottom: 40%;
+        left: 10% ;
+        padding: 5px;
     }
 
 }
 @media screen and (max-width: 1024px) {
     nav ul{
-        padding: 10px 20%;
+        padding: 0px 20%;
     }
     .mypic{
-        width: 470px;
-        bottom: 20%; 
-        left: 2%;
+        width: 400px;
+        bottom: 38%;
+        right: 0%;  
     }
-    .Content .text p{
-        margin-top: 3%;
+    
+    .ContentName {
+        margin-top: 10%;
+        max-width: 450px;
+    }
+    .PortHeader .contact a{
+        margin-top: 450px;
+    }
+    .contact{
+        width: 40% ;
+        bottom: 40%;
+        left: 10% ;
+        padding: 5px;
     }
     
 }
 @media screen and (max-width: 768px) {
+    nav  {
+        display: flex;
+    }
     nav ul{
-        padding: 5px 10%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 20px;
+        padding: 0px 25%;
+        gap: 80px;
     }
     .wordaboutme h1{
         letter-spacing: 8px;
@@ -108,12 +137,12 @@ nav ul li {
     }
     .mypic{
         display: flex;
-        width: 350px;
-        bottom: 50%;
+        width: 400px;
+        bottom: 43%;
         left: 25%;  
     }
     .Content{
-        margin-top: 65%;
+        margin-top: 85%;
         margin-left: 0%;
     }
     .Content p{
@@ -123,56 +152,70 @@ nav ul li {
   
 }
 @media screen and (max-width: 430px) {
-    .texttuii h1{
-        padding: 0px 0px 0px 250px ;
+    body{
+        width: 425px;
+    }
+    h1{
+        padding: 0px 50px 0px 135px ;
     }
     nav{
         display: grid;
-        gap: 20px;
-        grid-template-columns: repeat(auto-fit,minmax(350px,auto)); 
+        gap: 20px; 
     }
     nav ul{
         display: flex;
         align-items: center;
         justify-content: space-between;
-        padding: 0px 20%;
-        gap: 80px;
+        margin: 20px;
+        padding: 0px 5%;
+        gap: 20px;
     }
     .wordaboutme h1{
         width: 500px;
         letter-spacing: 8px;
-        margin-left: 190px;
+        margin-left: -15%;
         font-size: 24px;  
     }
     .mypic{
         display: flex;
         width: 300px;
         bottom: 45%;
-        margin-left: 20%;
+        left: 15%;
+        border-radius: 60px;
     }
+    
     .Content{
         margin-top: 120%;
-        margin-left: 50px;
+    }
+    .Content p {
+        width: 400px;
+        margin-left: 0px;
     }
 }
 @media screen and (max-width: 380px) {
-    .texttuii h1{
-        padding: 0px 0px 0px 230px ;
-    }
     nav{
         display: grid;
-        margin-left: -90px;
+        margin-left: -40px;
         gap: 20px;
-        grid-template-columns: repeat(auto-fit,minmax(450px,auto)); 
-    }
-    nav ul{
-        padding: 0px 10%;
+        grid-template-columns: repeat(auto-fit,minmax(350px,auto)); 
     }
     .wordaboutme h1{
         width: 500px;
         letter-spacing: 8px;
-        margin-left: 90px;
+        margin-left: -20%;
         font-size: 24px;  
+    }
+    .ContentName h1 {
+        letter-spacing: 4px;
+        padding: 0px 50px 0px 0px ;
+        font-size: medium;
+        font-size: 36px;
+    }
+    .ContentName span {
+        padding: 50px 15px;
+        border-radius: 20px;
+        color: #F4EDED;
+        background-color: #004EFF;
     }
     .mypic{
         display: flex;
@@ -183,5 +226,38 @@ nav ul li {
     .Content{
         margin-top: 125%;
         margin-left: -20px;
+    }
+    @media screen and (max-width: 325px) {
+        .PortHeader {
+            padding: 0px 0%;
+        }
+        .texttuii h1{
+            margin-left: -30px;
+        }
+        h1 {
+            margin-left: 10px;
+        }
+        p{
+            margin-left: 10px;
+        }
+        .ContentName p {
+            font-size: 20px;
+        }
+        nav{
+            width: 210px;
+            display: grid;
+            margin-left: 10px;
+            gap: 20px;
+            grid-template-columns: repeat(auto-fit,minmax(210px,auto)); 
+        }
+        .text p {
+            width: 310px;
+            margin-left: 30px;
+            font-size: 18px;
+        }
+        .Content{
+            margin-top: 100%;
+           
+        }
     }
 }
