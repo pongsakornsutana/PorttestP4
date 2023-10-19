@@ -143,15 +143,19 @@ nav ul li {
     }
 }
    @media screen and (max-width: 380px) {
+    body{
+        max-width: 350px;
+    }
     .PortHeader {
         padding: 0px 0px 0px 0px;
         height: 100%;
     }
     .texttuii h1{
-        padding: 20px 180px;
+        padding: 20px 190px;
     }
     nav{
         display: grid;
+        position: relative;
         margin-left: -50px;
         gap: 5px;
     }
@@ -180,14 +184,16 @@ nav ul li {
         background-color: #004EFF;
     }
         .container .boxcon{
-            margin-right: 50px;
+            margin-right: -40px;
         }
         
     }
     
     @media screen and (max-width: 325px) {
         .PortHeader {
-            padding: 0px 0%;
+            position: absolute;
+            max-width: 300px;
+            padding: 0px 0px 0px 5px;
         }
         .texttuii h1{
             margin-left: -80px;
@@ -197,9 +203,10 @@ nav ul li {
         }
         nav ul{
             margin: 0px;
-            padding: 0px 15%;
+            padding: 0px 10%;
         }
         .navbar-right{
+            width: 325px;
             padding-right: 50px;
         }
         h1 {
@@ -225,7 +232,7 @@ nav ul li {
             font-size: 24px;
         }
         .container .boxcon{
-            margin-right: 120px;
+            margin-right: 0px;
         }
         
     }
