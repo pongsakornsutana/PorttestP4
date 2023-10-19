@@ -192,7 +192,7 @@ nav ul{
         display: flex;
         width: 350px;
         border-radius: 20px;
-        bottom: 150px;
+        bottom: -250px;
         right: 10%;  
     }
     
