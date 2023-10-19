@@ -1,305 +1,48 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins';
-    list-style: none;
-    text-decoration: none;
-    color: #1E1E1E;
-    background-color: #F4EDED;
-    /*font-size: calc(60% + 0.8vmin);*/
-}
-.PortHeader{
-    width: 100%;
-    min-height: 100vh;
-    padding: 10px 10%;
-}
-.PortHeader nav .texttuii h1{
-    width: 10%;
-    font-size: medium;
-    font-size: 48px;
-}
-nav  {
-    display: flex;
-}
-nav ul{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin: 20px;
-    padding: 0px 50%;
-    gap: 100px;
-}
-nav .navbar-right ul{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    /* padding: 10px 30%; */
-}
-nav .navbar-right ul li{
-    display: inline-block;
-    list-style: none;
-    /* margin: 0 34px; */
-}
-nav ul li {
-    font-weight: 400px;
-}
-.Content{
-    margin-top: 10%;
-    margin-left: 50%;
-    margin-bottom: 10%;
-    max-width: 600px;
-}
-.wordaboutme h1{
-    letter-spacing: 8px;
-    margin-left: 43%;
-    font-size: 48px;  
-}
-.wordaboutme span{
-    color:  #004EFF;
-}
-.Content p{
-    font-size: 24px;
-}
-.mypic{
-    width: 550px;
-    border-radius: 140px;
-    position: absolute;
-    bottom: 0.5%;
-    left: 10%;  
-}
-@media screen and (max-width: 1440px) {
-    nav ul{
-        padding: 0px 30%;
-    }
-    .mypic{
-        width: 550px;
-        bottom: 20%;
-        right: 0%;
-    }
-    
-    .ContentName {
-        margin-top: 10%;
-        max-width: 450px;
-    }
-    .PortHeader .contact a{
-        margin-top: 400px;
-    }
-    .contact{
-        width: 40% ;
-        bottom: 40%;
-        left: 10% ;
-        padding: 5px;
-    }
-
-}
-@media screen and (max-width: 1024px) {
-    nav ul{
-        padding: 0px 20%;
-    }
-    .mypic{
-        width: 400px;
-        bottom: 38%;
-        right: 0%;  
-    }
-    
-    .ContentName {
-        margin-top: 10%;
-        max-width: 450px;
-    }
-    .PortHeader .contact a{
-        margin-top: 450px;
-    }
-    .contact{
-        width: 40% ;
-        bottom: 40%;
-        left: 10% ;
-        padding: 5px;
-    }
-    
-}
-@media screen and (max-width: 768px) {
-    .PortHeader{
-        padding: 20px 50px;
-    }
-    .texttuii h1{
-        padding: 20px;
-    }
-    nav  {
-        display: flex;
-    }
-    nav ul{
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        margin: 20px;
-        padding: 20px 25px ;
-        gap: 80px;
-    }
-    .wordaboutme h1{
-        letter-spacing: 8px;
-        margin-left: 30%;
-        font-size: 36px;  
-    }
-    .mypic{
-        display: flex;
-        width: 400px;
-        bottom: 35%;
-        left: 25%;  
-    }
-    .Content{
-        margin-top: 85%;
-        margin-left: 0%;
-    }
-    .Content p{
-        font-size: 18px;
-        margin-left: 50px;
-    }
-  
-}
-@media screen and (max-width: 430px) {
-    body{
-        width: 430px;
-        
-    }
-    .texttuii h1{
-        padding: 20px 120px;
-    }
-    nav{
-        display: grid;
-        gap: 20px; 
-    }
-    nav ul{
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        margin: 20px;
-        padding: 0px 0%;
-        gap: 20px;
-    }
-    .wordaboutme h1{
-        width: 500px;
-        letter-spacing: 8px;
-        margin-left: 25%;
-        font-size: 24px;  
-    }
-    .mypic{
-        display: flex;
-        width: 280px;
-        top: 280px; 
-        left: 80px;
-        border-radius: 60px;
-    }
-    
-    .Content{
-        margin-top: 120%;
-    }
-    .Content p {
-        width: 350px;
-        font-size: 16px;
-        margin-left: 12px;
-    }
-}
-@media screen and (max-width: 380px) {
-    .PortHeader {
-        padding: 0px 0px 0px 0px;
-        height: 100%;
-    }
-    .texttuii h1{
-        padding: 20px 180px;
-    }
-    nav{
-        display: grid;
-        margin-left: -50px;
-        gap: 5px;
-    }
-    nav ul{
-        margin: 0px;
-        padding: 10px 15%;
-        gap: 5px;
-    }
-    .wordaboutme h1{
-        padding: 10px 0px 0px 0px;
-        width: 300px;
-        letter-spacing: 8px;
-        margin-left: 110px;
-        font-size: 24px;  
-    }
-    .ContentName h1 {
-        letter-spacing: 4px;
-        padding: 0px 50px 0px 0px ;
-        font-size: medium;
-        font-size: 36px;
-    }
-    .ContentName span {
-        padding: 50px 15px;
-        border-radius: 20px;
-        color: #F4EDED;
-        background-color: #004EFF;
-    }
-    .mypic{
-        display: flex;
-        width: 250px;
-        bottom: 15%;
-        margin-left: 0%;
-    }
-    .Content{
-        margin-top: 400px;
-        margin-left: 20px;
-    }
-    @media screen and (max-width: 325px) {
-        .PortHeader {
-            padding: 0px 0%;
-        }
-        .texttuii h1{
-            margin-left: -80px;
-        }
-        nav{
-            margin-left: 0px;
-        }
-        nav ul{
-            margin: 0px;
-            padding: 0px 15%;
-        }
-        .navbar-right{
-            padding-right: 50px;
-        }
-        h1 {
-            margin-left: 0px;
-        }
-        p{
-            margin-left: 0px;
-        }
-        .ContentName p {
-            font-size: 20px;
-        }
-        nav{
-            width: 210px;
-            display: grid;
-            margin-left: 10px;
-            gap: 20px; 
-        }
-        .text p {
-            width: 280px;
-            margin-left: 10px;
-            font-size: 14px;
-        }
-        .wordaboutme h1 {
-            padding: 10px 0px 0px 0px;
-            width: 300px;
-            letter-spacing: 8px;
-            margin-left: 80px;
-            font-size: 24px;
-        }
-        .mypic{
-            display: flex;
-            width: 250px;
-            bottom: 20%;
-            margin-left: -10%;
-        }
-        .Content{
-            margin-top: 100%;
-           
-        }
-    }
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>WebPortfolio</title>
+    <link rel="stylesheet" href="about.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- HTML formtting Element -->
+    <div class="PortHeader">         
+        <nav>
+            <div class="texttuii">
+                <a href="port_header.html"><h1>TUII.</h1></a>
+            </div>
+            <div class="navbar-right">
+             <ul>
+                <li><a href="port_header.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="skill.html">skill</a></li>
+                <li><a href="work.html">Work</a></li>
+             </ul>
+            </div>   
+        </nav> 
+            <div class="wordaboutme">
+                <h1>ABOUT<span> ME</span></h1>
+            </div>
+            <div class="Content">
+                <img src="img/self1.png" alt="" class="mypic">
+                <div class="text">
+                    <p>My Name is Pongsakorn Sutana</p>
+                    <p>Age : 21</p>
+                    <p>Gender : Male</p>
+                    <p>Language : Thai and a little English</p>
+                    <p>Work : Front-End Developer & Graphic Designer</p>
+                    <p>Phone : 080-9010115</p>
+                    <p>Email : Pongsakornsutana@Gmail.com</p>
+                    <p>Country : Thaiand</p>
+                </div>
+            </div>
+        </div> 
+</body>
+</html>
