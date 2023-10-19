@@ -112,7 +112,7 @@ nav ul{
     }
     .contact{
         width: 40% ;
-        bottom: 40%;
+        top: 50%;
         left: 10% ;
         padding: 5px;
     }
@@ -142,7 +142,7 @@ nav ul{
     .mypic{
         display: flex;
         width: 450px;
-        bottom: 120px;
+        top: 500px;
         right: 180px;  
     }
     
@@ -155,7 +155,7 @@ nav ul{
         margin-top: 240%;
     }
     .contact{
-        width: 40% ;
+        width: 50% ;
         padding: 20px;
     }
 }
@@ -225,7 +225,7 @@ nav ul{
         height: 100%;
     }
     .texttuii h1{
-        padding: 20px 180px;
+        padding: 20px 190px;
     }
     nav{
         display: grid;
@@ -237,6 +237,11 @@ nav ul{
         margin: 0px;
         padding: 10px 15%;
         gap: 5px;
+    }
+    .ContentName p {
+        letter-spacing: 3px;
+        font-size: smaller;
+        font-size: 24px;
     }
     .ContentName h1 {
         letter-spacing: 4px;
@@ -273,7 +278,7 @@ nav ul{
         .PortHeader {
             position: absolute;
             max-width: 300px;
-            padding: 0px 0%;
+            padding: 0px 0px 0px 5px;
         }
         .texttuii h1{
             margin-left: -80px;
@@ -295,7 +300,6 @@ nav ul{
         p{
             margin-left: 0px;
         }
-    
         .ContentName p {
             font-size: 20px;
         }
