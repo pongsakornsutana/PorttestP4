@@ -246,8 +246,8 @@ nav ul{
     .mypic{
         display: flex;
         width: 250px;
-        bottom: 250px;
-        right: 15%;  
+        bottom: -190px;
+        right: 1%;  
     }
     
     .ContentName {
@@ -267,14 +267,14 @@ nav ul{
             padding: 0px 0%;
         }
         .texttuii h1{
-            margin-left: -80px;
+            margin-left: -25px;
         }
         nav{
             margin-left: 0px;
         }
         nav ul{
             margin: 0px;
-            padding: 0px 15%;
+            padding: 0px 0% 0px 50px;
         }
         .navbar-right{
             padding-right: 50px;
@@ -284,6 +284,9 @@ nav ul{
         }
         p{
             margin-left: 0px;
+        }
+        .ContentName{
+            magin-left: 10%;
         }
         .ContentName p {
             font-size: 20px;
@@ -298,8 +301,8 @@ nav ul{
         .mypic{
             display: flex;
             width: 300px;
-            bottom: 300px;
-            right: 5%;  
+            bottom: -150px;
+            right: 0%;  
         }
         .PortHeader .contact a{
             margin-top: 130%;
