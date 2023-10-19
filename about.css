@@ -119,6 +119,12 @@ nav ul li {
     
 }
 @media screen and (max-width: 768px) {
+    .PortHeader{
+        padding: 20px 50px;
+    }
+    .texttuii h1{
+        padding: 20px;
+    }
     nav  {
         display: flex;
     }
@@ -127,7 +133,7 @@ nav ul li {
         align-items: center;
         justify-content: space-between;
         margin: 20px;
-        padding: 0px 25%;
+        padding: 20px 25px ;
         gap: 80px;
     }
     .wordaboutme h1{
@@ -138,7 +144,7 @@ nav ul li {
     .mypic{
         display: flex;
         width: 400px;
-        bottom: 43%;
+        bottom: 35%;
         left: 25%;  
     }
     .Content{
@@ -153,10 +159,11 @@ nav ul li {
 }
 @media screen and (max-width: 430px) {
     body{
-        width: 425px;
+        width: 430px;
+        
     }
-    h1{
-        padding: 0px 50px 0px 135px ;
+    .texttuii h1{
+        padding: 20px 120px;
     }
     nav{
         display: grid;
@@ -167,20 +174,20 @@ nav ul li {
         align-items: center;
         justify-content: space-between;
         margin: 20px;
-        padding: 0px 5%;
+        padding: 0px 0%;
         gap: 20px;
     }
     .wordaboutme h1{
         width: 500px;
         letter-spacing: 8px;
-        margin-left: -15%;
+        margin-left: 25%;
         font-size: 24px;  
     }
     .mypic{
         display: flex;
-        width: 300px;
-        bottom: 45%;
-        left: 15%;
+        width: 280px;
+        top: 280px; 
+        left: 80px;
         border-radius: 60px;
     }
     
@@ -188,21 +195,34 @@ nav ul li {
         margin-top: 120%;
     }
     .Content p {
-        width: 400px;
-        margin-left: 0px;
+        width: 350px;
+        font-size: 16px;
+        margin-left: 12px;
     }
 }
 @media screen and (max-width: 380px) {
+    .PortHeader {
+        padding: 0px 0px 0px 0px;
+        height: 100%;
+    }
+    .texttuii h1{
+        padding: 20px 180px;
+    }
     nav{
         display: grid;
-        margin-left: -40px;
-        gap: 20px;
-        grid-template-columns: repeat(auto-fit,minmax(350px,auto)); 
+        margin-left: -50px;
+        gap: 5px;
+    }
+    nav ul{
+        margin: 0px;
+        padding: 10px 15%;
+        gap: 5px;
     }
     .wordaboutme h1{
-        width: 500px;
+        padding: 10px 0px 0px 0px;
+        width: 300px;
         letter-spacing: 8px;
-        margin-left: -20%;
+        margin-left: 110px;
         font-size: 24px;  
     }
     .ContentName h1 {
@@ -224,21 +244,31 @@ nav ul li {
         margin-left: 0%;
     }
     .Content{
-        margin-top: 125%;
-        margin-left: -20px;
+        margin-top: 400px;
+        margin-left: 20px;
     }
     @media screen and (max-width: 325px) {
         .PortHeader {
             padding: 0px 0%;
         }
         .texttuii h1{
-            margin-left: -30px;
+            margin-left: -80px;
+        }
+        nav{
+            margin-left: 0px;
+        }
+        nav ul{
+            margin: 0px;
+            padding: 0px 15%;
+        }
+        .navbar-right{
+            padding-right: 50px;
         }
         h1 {
-            margin-left: 10px;
+            margin-left: 0px;
         }
         p{
-            margin-left: 10px;
+            margin-left: 0px;
         }
         .ContentName p {
             font-size: 20px;
@@ -247,13 +277,25 @@ nav ul li {
             width: 210px;
             display: grid;
             margin-left: 10px;
-            gap: 20px;
-            grid-template-columns: repeat(auto-fit,minmax(210px,auto)); 
+            gap: 20px; 
         }
         .text p {
-            width: 310px;
-            margin-left: 30px;
-            font-size: 18px;
+            width: 280px;
+            margin-left: 10px;
+            font-size: 14px;
+        }
+        .wordaboutme h1 {
+            padding: 10px 0px 0px 0px;
+            width: 300px;
+            letter-spacing: 8px;
+            margin-left: 80px;
+            font-size: 24px;
+        }
+        .mypic{
+            display: flex;
+            width: 250px;
+            bottom: 20%;
+            margin-left: -10%;
         }
         .Content{
             margin-top: 100%;
