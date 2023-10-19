@@ -90,6 +90,12 @@ nav ul li {
     }
 }
 @media screen and (max-width: 768px) {
+    .PortHeader{
+        padding: 20px 50px;
+    }
+    .texttuii h1{
+        padding: 20px;
+    }
     nav  {
         display: flex;
     }
@@ -98,7 +104,7 @@ nav ul li {
         align-items: center;
         justify-content: space-between;
         margin: 20px;
-        padding: 0px 25%;
+        padding: 20px 25px ;
         gap: 80px;
     }
     .wordmyskill h1{
@@ -111,10 +117,11 @@ nav ul li {
 }
 @media screen and (max-width: 430px) {
     body{
-        width: 425px;
+        width: 430px;
+        
     }
-    h1{
-        padding: 0px 50px 0px 135px ;
+    .texttuii h1{
+        padding: 20px 120px;
     }
     nav{
         display: grid;
@@ -125,37 +132,53 @@ nav ul li {
         align-items: center;
         justify-content: space-between;
         margin: 20px;
-        padding: 0px 5%;
+        padding: 0px 0%;
         gap: 20px;
     }
     .wordmyskill h1{
         width: 500px;
         letter-spacing: 8px;
-        margin-left: 0%;
+        margin-left: 25%;
         font-size: 24px;
     }
-    @media screen and (max-width: 380px) {
-        nav{
-            display: grid;
-            margin-left: -40px;
-            gap: 20px;
-            grid-template-columns: repeat(auto-fit,minmax(350px,auto)); 
-        }
-        .ContentName h1 {
-            letter-spacing: 4px;
-            padding: 0px 50px 0px 0px ;
-            font-size: medium;
-            font-size: 36px;
-        }
-        .ContentName span {
-            padding: 50px 15px;
-            border-radius: 20px;
-            color: #F4EDED;
-            background-color: #004EFF;
-        }
-        .wordmyskill{
-            margin-left: -20%;
-        }
+}
+   @media screen and (max-width: 380px) {
+    .PortHeader {
+        padding: 0px 0px 0px 0px;
+        height: 100%;
+    }
+    .texttuii h1{
+        padding: 20px 180px;
+    }
+    nav{
+        display: grid;
+        margin-left: -50px;
+        gap: 5px;
+    }
+    nav ul{
+        margin: 0px;
+        padding: 10px 15%;
+        gap: 5px;
+    }
+    .wordmyskill h1{
+        padding: 10px 0px 0px 0px;
+        width: 300px;
+        letter-spacing: 8px;
+        margin-left: 110px;
+        font-size: 24px;  
+    }
+    .ContentName h1 {
+        letter-spacing: 4px;
+        padding: 0px 50px 0px 0px ;
+        font-size: medium;
+        font-size: 36px;
+    }
+    .ContentName span {
+        padding: 50px 15px;
+        border-radius: 20px;
+        color: #F4EDED;
+        background-color: #004EFF;
+    }
         .container .boxcon{
             margin-right: 50px;
         }
@@ -167,13 +190,23 @@ nav ul li {
             padding: 0px 0%;
         }
         .texttuii h1{
-            margin-left: -30px;
+            margin-left: -80px;
+        }
+        nav{
+            margin-left: 0px;
+        }
+        nav ul{
+            margin: 0px;
+            padding: 0px 15%;
+        }
+        .navbar-right{
+            padding-right: 50px;
         }
         h1 {
-            margin-left: 10px;
+            margin-left: 0px;
         }
         p{
-            margin-left: 10px;
+            margin-left: 0px;
         }
         .ContentName p {
             font-size: 20px;
@@ -182,15 +215,18 @@ nav ul li {
             width: 210px;
             display: grid;
             margin-left: 10px;
-            gap: 20px;
-            grid-template-columns: repeat(auto-fit,minmax(210px,auto)); 
+            gap: 20px; 
         }
-        .wordmyskill{
-            margin-left: -15%;
+        .wordmyskill h1 {
+            padding: 10px 0px 0px 0px;
+            width: 300px;
+            letter-spacing: 8px;
+            margin-left: 80px;
+            font-size: 24px;
         }
         .container .boxcon{
             margin-right: 120px;
         }
         
     }
-}
+
