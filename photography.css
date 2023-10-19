@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins';
+    list-style: none;
+    text-decoration: none;
+    color: #1E1E1E;
+    /* background-color: #F4EDED; */
+    scroll-behavior: smooth;
+    /*font-size: calc(60% + 0.8vmin);*/
+}
+body{
+    background-color: #F4EDED; 
+}
+.PortHeader{
+    width: 100%;
+    min-height: 100vh;
+    padding: 10px 10%;
+}
+.PortHeader nav .texttuii h1{
+    width: 10%;
+    font-size: medium;
+    font-size: 48px;
+}
+nav  {
+    display: flex;
+}
+nav ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px;
+    padding: 0px 50%;
+    gap: 100px;
+}
+nav .navbar-right ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+nav .navbar-right ul li{
+    display: inline-block;
+    list-style: none;
+    /* margin: 0 34px; */
+}
+nav ul li {
+    font-weight: 400px;
+}
+.wordmyskill h1{
+    letter-spacing: 8px;
+    margin-left: 30%;
+    font-size: 48px;  
+}
+.wordmyskill span{
+    color:  #004EFF;
+}
+.gallery{
+    padding: 10px;
+    max-width: 1000px;
+    margin: 0 auto;
+    background: #f2f2f2;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    grid-auto-rows: 250px;
+    grid-auto-flow: dense;
+}
+/****** stretch vertically*********/
+.v-stretch{
+    grid-row: span 2;
+}   
+
+/****** stretch horizontally*********/
+.h-stretch{
+    grid-row: span 2;
+} 
+/****** stretch horizontally & horizontally *********/
+.big-stretch{
+    grid-row: span 2;
+    grid-column: span 2;
+} 
+.gallery div img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+} 
