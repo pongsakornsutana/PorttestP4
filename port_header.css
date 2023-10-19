@@ -119,6 +119,12 @@ nav ul{
 }
 
 @media screen and (max-width: 768px) {
+    .PortHeader{
+        padding: 20px 50px;
+    }
+    .texttuii h1{
+        padding: 20px;
+    }
     nav  {
         display: flex;
     }
@@ -127,26 +133,27 @@ nav ul{
         align-items: center;
         justify-content: space-between;
         margin: 20px;
-        padding: 0px 25%;
+        padding: 20px 25px ;
         gap: 80px;
     }
     .mypic{
         display: flex;
         width: 450px;
-        bottom: 150px;
-        right: 25%;  
+        bottom: 120px;
+        right: 180px;  
     }
     
     .ContentName {
         margin-top: 10%;
         max-width: 450px;
+        padding: 20px 25px ;
     }
     .PortHeader .contact a{
-        margin-top: 250%;
+        margin-top: 240%;
     }
     .contact{
         width: 40% ;
-        padding: 5px;
+        padding: 20px;
     }
 }
 @media screen and (max-width: 430px) {
@@ -154,8 +161,8 @@ nav ul{
         width: 430px;
         
     }
-    h1{
-        padding: 0px 50px 0px 135px ;
+    .texttuii h1{
+        padding: 20px 120px;
     }
     nav{
         display: grid;
@@ -166,7 +173,7 @@ nav ul{
         align-items: center;
         justify-content: space-between;
         margin: 20px;
-        padding: 0px 5%;
+        padding: 0px 0%;
         gap: 20px;
     }
     .ContentName h1 {
@@ -185,8 +192,8 @@ nav ul{
         display: flex;
         width: 350px;
         border-radius: 20px;
-        bottom: 250px;
-        right: 15%;  
+        bottom: 150px;
+        right: 10%;  
     }
     
     .ContentName {
@@ -194,20 +201,35 @@ nav ul{
         max-width: 450px;
     }
     .PortHeader .contact a{
-        margin-top: 180%;
+        margin-top: 130%;
+        
+    }
+    .contact a {
+        margin-left: 2px;
     }
     .contact{
-        width: 80% ;
-        padding: 5px;
+        width: 350px ;
+        padding:20px;
     }
 }
 
 @media screen and (max-width: 380px) {
+    .PortHeader {
+        padding: 0px 0px 0px 0px;
+        height: 100%;
+    }
+    .texttuii h1{
+        padding: 20px 180px;
+    }
     nav{
         display: grid;
-        margin-left: -40px;
-        gap: 20px;
-        grid-template-columns: repeat(auto-fit,minmax(350px,auto)); 
+        margin-left: -50px;
+        gap: 5px;
+    }
+    nav ul{
+        margin: 0px;
+        padding: 10px 15%;
+        gap: 5px;
     }
     .ContentName h1 {
         letter-spacing: 4px;
@@ -224,7 +246,7 @@ nav ul{
     .mypic{
         display: flex;
         width: 250px;
-        bottom: -150px;
+        bottom: 250px;
         right: 15%;  
     }
     
@@ -236,7 +258,7 @@ nav ul{
         margin-top: 120%;
     }
     .contact{
-        width: 120% ;
+        width: 100% ;
         padding: 5px;
     }
 }
@@ -245,13 +267,23 @@ nav ul{
             padding: 0px 0%;
         }
         .texttuii h1{
-            margin-left: -30px;
+            margin-left: -80px;
+        }
+        nav{
+            margin-left: 0px;
+        }
+        nav ul{
+            margin: 0px;
+            padding: 0px 15%;
+        }
+        .navbar-right{
+            padding-right: 50px;
         }
         h1 {
-            margin-left: 10px;
+            margin-left: 0px;
         }
         p{
-            margin-left: 10px;
+            margin-left: 0px;
         }
         .ContentName p {
             font-size: 20px;
@@ -260,19 +292,21 @@ nav ul{
             width: 210px;
             display: grid;
             margin-left: 10px;
-            gap: 20px;
-            grid-template-columns: repeat(auto-fit,minmax(210px,auto)); 
+            gap: 20px; 
         }
         
         .mypic{
             display: flex;
-            width: 250px;
+            width: 300px;
             bottom: 300px;
-            right: 15%;  
+            right: 5%;  
         }
         .PortHeader .contact a{
-            margin-top: 100%;
-            margin-left: -20px;
+            margin-top: 130%;
+            margin-left: 10px;
+        }
+        .contact{
+            width: 300px;
         }
     }
     
