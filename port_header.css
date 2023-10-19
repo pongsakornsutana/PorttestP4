@@ -119,6 +119,9 @@ nav ul{
 }
 
 @media screen and (max-width: 768px) {
+    body{
+        position: absolute;
+    }
     .PortHeader{
         padding: 20px 50px;
     }
@@ -192,13 +195,13 @@ nav ul{
         display: flex;
         width: 350px;
         border-radius: 20px;
-        bottom: -250px;
+        bottom: 150px;
         right: 10%;  
     }
     
     .ContentName {
         margin-top: 10%;
-        max-width: 450px;
+        max-width: 420px;
     }
     .PortHeader .contact a{
         margin-top: 130%;
@@ -214,6 +217,9 @@ nav ul{
 }
 
 @media screen and (max-width: 380px) {
+    body{
+        max-width: 350px;
+    }
     .PortHeader {
         padding: 0px 0px 0px 0px;
         height: 100%;
@@ -223,6 +229,7 @@ nav ul{
     }
     nav{
         display: grid;
+        position: relative;
         margin-left: -50px;
         gap: 5px;
     }
@@ -246,13 +253,13 @@ nav ul{
     .mypic{
         display: flex;
         width: 350px;
-        bottom: -190px;
+        bottom: 100px;
         right: 1%;  
     }
     
     .ContentName {
         margin-top: 10%;
-        max-width: 450px;
+        max-width: 380px;
     }
     .PortHeader .contact a{
         margin-top: 120%;
@@ -264,19 +271,22 @@ nav ul{
 }
     @media screen and (max-width: 325px) {
         .PortHeader {
+            position: absolute;
+            max-width: 300px;
             padding: 0px 0%;
         }
         .texttuii h1{
-            margin-left: -25px;
+            margin-left: -80px;
         }
         nav{
             margin-left: 0px;
         }
         nav ul{
             margin: 0px;
-            padding: 0px 0% 0px 50px;
+            padding: 0px 10%;
         }
         .navbar-right{
+            width: 325px;
             padding-right: 50px;
         }
         h1 {
@@ -285,9 +295,7 @@ nav ul{
         p{
             margin-left: 0px;
         }
-        .ContentName{
-            margin-left: 10%;
-        }
+    
         .ContentName p {
             font-size: 20px;
         }
@@ -297,11 +305,10 @@ nav ul{
             margin-left: 10px;
             gap: 20px; 
         }
-        
         .mypic{
             display: flex;
             width: 300px;
-            bottom: -150px;
+            bottom: -140px;
             right: 0%;  
         }
         .PortHeader .contact a{
