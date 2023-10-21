@@ -68,7 +68,6 @@
     cursor: pointer;
     display: none;
 }
-
 .ContentName{
     max-width: 960px;
     top: 20% ;
@@ -281,7 +280,7 @@
     }
     .ContentName p{
         width: 300px;
-        letter-spacing: 5px;
+        letter-spacing: 3px;
         font-size: smaller;
         font-size: 24px;
         align-items: center;
@@ -291,7 +290,7 @@
         width: 300px;
         letter-spacing: 8px;
         font-size: medium;
-        font-size: 36px;
+        font-size: 30px;
         align-items: center;
         justify-content: center;
     }
@@ -305,7 +304,7 @@
     }
     .mypic{
         width: 300px;
-        border-radius: 140px;
+        border-radius: 20px;
         position: absolute;
         top: 125%;
         right: -10%;  
@@ -344,7 +343,7 @@
     } 
     .mypic{
         width: 280px;
-        border-radius: 140px;
+        border-radius: 20px;
         position: absolute;
         top: 125%;
         right: 10%;  
