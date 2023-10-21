@@ -10,7 +10,12 @@
     scroll-behavior: smooth;
     /*font-size: calc(60% + 0.8vmin);*/
 }
-
+.cover .ContentName{
+    position: absolute;  
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
 .header{
     position: absolute;
     top: 0;
@@ -63,20 +68,27 @@
     cursor: pointer;
     display: none;
 }
+
 .ContentName{
     max-width: 960px;
-    margin-top: 180px ;
-    margin-left: 150px;
+    top: 20% ;
+    left: 50%;
+    align-items: center;
+    justify-content: center;
 }
 .ContentName p{
     letter-spacing: 5px;
     font-size: smaller;
     font-size: 24px;
+    align-items: center;
+    justify-content: center;
 }
 .ContentName h1{
     letter-spacing: 8px;
     font-size: medium;
     font-size: 48px;
+    align-items: center;
+    justify-content: center;
 }
 .ContentName span{
     padding: 50px 15px;
@@ -86,14 +98,16 @@
     background-color: #004EFF;
 }
 .mypic{
-    width: 650px;
+    width: 600px;
     border-radius: 140px;
     position: absolute;
-    bottom: 0%;
-    right: 5%;  
+    top: 15%;
+    right: -15%;  
 }
+
 .ContentName .contact a{
     margin-top: 220px;
+    align-items: center;
 } 
 .contact{
     width: 300px;
@@ -104,9 +118,23 @@
     padding: 10px 10%;
 }
 
-@media screen and (max-width: 1440px) {
+@media screen and (min-width: 1440px) {
     body{
-        overflow-x: hidden;
+        overflow-x: hidden; 
+    }
+    .cover .ContentName{
+        position: absolute;  
+        max-width: 960px;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+    }
+    .ContentName{
+        max-width: 960px;
+        top: 20% ;
+        left: 10%;
+        align-items: center;
+        justify-content: center;
     }
     .nav-links{
         width: 50%;
@@ -115,27 +143,59 @@
         display: none;
     }
     .mypic{
-        width: 650px;
-        bottom: 15%;
+        width: 450px;
+        top: 40%;
+        right: -50%;
     }
     .ContentName .contact a{
-        margin-top: 380px;
+        margin-top: 200px;
     } 
    
-}
-
-@media screen and (max-width: 1024px) {
+} 
+ @media screen and (max-width: 1024px) {
+    .cover .ContentName{
+        position: absolute;  
+        width: 900px;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+    }
+    
+    .ContentName{
+        top: 20% ;
+        left: 10%;
+        align-items: center;
+        justify-content: center;
+    }
+    .ContentName p{
+        width: 500px;
+        letter-spacing: 5px;
+        font-size: smaller;
+        font-size: 24px;
+        align-items: center;
+        justify-content: center;
+    }
+    .ContentName h1{
+        width: 500px;
+        letter-spacing: 8px;
+        font-size: medium;
+        font-size: 36px;
+        align-items: center;
+        justify-content: center;
+    }
     .burger{
         display: none;
     }
     .mypic{
-        width: 400px;
-        bottom: 3%;
+        width: 450px;
+        top: 15%;
+        right: 0%;
     }
     .ContentName .contact a{
-        margin-top: 350px;
+        margin-top: 250px;
+        margin-left: 0px;
     }
-}
+} 
 @media (max-width: 992px){
     .header{
         padding: 1.3rem 5%;
@@ -183,8 +243,12 @@
     }
     .mypic{
         width: 580px;
-        bottom: 5%;
-        right: 10%;
+        top: 80%;
+        right: 5%;
+    }
+    .cover .ContentName {
+        position: absolute;
+        width: 600px;
     }
     .ContentName .contact a{
         margin-top: 30px;
@@ -205,20 +269,46 @@
         font-size: 1.1rem;
         padding: 20px
     }
+    .cover .ContentName {
+        position: absolute;
+        width: 300px;
+    }
+    .ContentName{
+        top: 0% ;
+        left: 10%;
+        align-items: center;
+        justify-content: center;
+    }
+    .ContentName p{
+        width: 300px;
+        letter-spacing: 5px;
+        font-size: smaller;
+        font-size: 24px;
+        align-items: center;
+        justify-content: center;
+    }
+    .ContentName h1{
+        width: 300px;
+        letter-spacing: 8px;
+        font-size: medium;
+        font-size: 36px;
+        align-items: center;
+        justify-content: center;
+    }
     #check:checked~.navbar{
         height: 25rem;
     }
     .ContentName{
-        max-width: 400px;
-        margin-top: 180px ;
-        margin-left: 20px;
+        max-width: 300px;
+        margin-top: 125px ;
+        margin-left: -20px;
     }
     .mypic{
-        width: 400px;
+        width: 300px;
         border-radius: 140px;
         position: absolute;
-        bottom: 8%;
-        right: 2%;  
+        top: 125%;
+        right: -10%;  
     }
     .ContentName .contact a{
         margin-top: 20px;
@@ -232,60 +322,34 @@
         padding: 2px 15%;
     }
 }
-
-@media screen and (max-width: 380px) {
-    .ContentName{
-        max-width: 370px;
-        margin-top: 180px ;
-        margin-left: 10px;
-    }
+@media screen and (max-width: 320px) {
     .ContentName p{
-        font-size: 22px;
+        width: 280px;
+        letter-spacing: 5px;
+        font-size: smaller;
+        font-size: 24px;
+        align-items: center;
+        justify-content: center;
     }
     .ContentName h1{
-        font-size: 40px;
-    }
-    .mypic{
-        width: 400px;
-        border-radius: 140px;
-        position: absolute;
-        bottom: 8%;
-        left: 0;
-        right: 2%;  
+        width: 280px;
+        letter-spacing: 8px;
+        font-size: medium;
+        font-size: 28px;
+        align-items: center;
+        justify-content: center;
     }
     .ContentName .contact a{
         margin-top: 25px;
     } 
-    .contact{
-        width: 300px;
-        color: #0e3477;
-    
-    }
-    .contact a{
-        padding: 2px 15%;
+    .mypic{
+        width: 280px;
+        border-radius: 140px;
+        position: absolute;
+        top: 125%;
+        right: 10%;  
     }
 }
-    @media screen and (max-width: 325px) {
-        .ContentName{
-            max-width: 320px;
-            margin-top: 180px ;
-            margin-left: 5px;
-        }
-        .ContentName p{
-            font-size: 22px;
-        }
-        .ContentName h1{
-            font-size: 32px;
-        }
-        .mypic{
-            width: 320px;
-            border-radius: 140px;
-            position: absolute;
-            bottom: 10%;
-            left: 0; right: 10%;  
-        }
-        .ContentName .contact a{
-            margin-top: 30px;
-        } 
-    }
+
+ 
     
