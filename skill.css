@@ -6,15 +6,9 @@
     list-style: none;
     text-decoration: none;
     color: #1E1E1E;
-    background-color: #F4EDED ;
+    background: #F4EDED ;
     scroll-behavior: smooth;
     /*font-size: calc(60% + 0.8vmin);*/
-}
-.cover .ContentName{
-    position: absolute;  
-    justify-content: center;
-    align-content: center;
-    align-items: center;
 }
 .header{
     position: absolute;
@@ -199,7 +193,6 @@
         margin-right: 80px;
         text-align: center;
     }
-    
     .wordmyskill h1{
         letter-spacing: 8px;
         margin-left: 35%;
