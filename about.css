@@ -335,7 +335,7 @@
     }
   
 }
- @media screen and (max-width: 430px) {
+ @media screen and (max-width: 460px) {
     .navbar a{
         font-size: 1.1rem;
         padding: 20px
