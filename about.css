@@ -68,40 +68,72 @@
     cursor: pointer;
     display: none;
 }
-.wordaboutme h1{
-    letter-spacing: 8px;
-    margin-left: 40%;
-    font-size: 48px;  
+.ContentName{
+    max-width: 960px;
+    top: 20% ;
+    left: 50%;
+    align-items: center;
+    justify-content: center;
 }
-.wordaboutme span{
-    color:  #004EFF;
-}
-.Content p{
+.ContentName p{
+    letter-spacing: 5px;
+    font-size: smaller;
     font-size: 24px;
+    align-items: center;
+    justify-content: center;
+}
+.ContentName h1{
+    letter-spacing: 8px;
+    font-size: medium;
+    font-size: 48px;
+    align-items: center;
+    justify-content: center;
+}
+.ContentName span{
+    padding: 50px 15px;
+    border-radius: 560px;
+    color: #F4EDED;
+    background: none; 
+    background-color: #004EFF;
 }
 .mypic{
-    width: 550px;
+    width: 600px;
     border-radius: 140px;
     position: absolute;
-    top: 25%;
-    left: 5%;  
+    top: 5%;
+    right: -15%;  
 }
-@media screen and (min-width: 1300px) {
+
+.ContentName .contact a{
+    margin-top: 220px;
+    align-items: center;
+} 
+.contact{
+    width: 300px;
+    color: #0e3477;
+
+}
+.contact a{
+    padding: 10px 10%;
+}
+
+@media screen and (min-width: 1000px) {
     body{
         overflow-x: hidden; 
     }
-    .wordaboutme h1{
-        margin-top: 120px;
-        margin-left: 40%; 
-    }
-    .wordaboutme span{
-        color:  #004EFF;
-    }
     .cover .ContentName{
         position: absolute;  
+        max-width: 960px;
         justify-content: center;
         align-content: center;
         align-items: center;
+    }
+    .ContentName{
+        max-width: 960px;
+        top: 20% ;
+        left: 10%;
+        align-items: center;
+        justify-content: center;
     }
     .nav-links{
         width: 50%;
@@ -110,100 +142,66 @@
         display: none;
     }
     .mypic{
-        display: flex;
-        width: 450px;
-        border-radius: 120px;
-        background: none;
-        top: 30%;
-        left: 20%;
-    } 
-    .ContentName{
-        margin-top: 200px;
-    }
-    .ContentName p{
-        margin-left: 52%;
-    }
-   
-}
-@media screen and (max-width: 1300px) {
-    .cover .ContentName{
-        position: absolute;  
-        width: 1000px;
-        justify-content: center;
-        align-content: center;
-        align-items: center;
-    }
-    .wordaboutme h1{
-        margin-top: 120px;
-        margin-left: 40%; 
-    }
-    .ContentName h1{
-        width: 500px;
-        letter-spacing: 8px;
-        font-size: medium;
-        font-size: 36px;
-        align-items: center;
-        justify-content: center;
-    }
-    .burger{
-        display: none;
-    }
-    .mypic{
-        display: flex;
-        width: 450px;
-        border-radius: 120px;
-        background: none;
-        top: 25%;
-        left: 15%;
-    } 
-    .ContentName{
-        margin-top: 250px;
-    }
-    .ContentName p{
-        margin-left: 52%;
-    }
-    
-} 
-@media screen and (max-width: 1024px) {
-    .cover .ContentName{
-        position: absolute;  
-        width: 1000px;
-        justify-content: center;
-        align-content: center;
-        align-items: center;
-    }
-    .wordaboutme h1{
-        margin-top: 120px;
-        margin-left: 40%; 
-    }
-    .ContentName h1{
-        width: 500px;
-        letter-spacing: 8px;
-        font-size: medium;
-        font-size: 36px;
-        align-items: center;
-        justify-content: center;
-    }
-    .burger{
-        display: none;
-    }
-    .mypic{
-        display: flex;
         width: 400px;
         border-radius: 120px;
-        background: none;
-        top: 30%;
-        left: 10%;
-    } 
-    .ContentName{
-        margin-top: 250px;
+        top: 25%;
+        right: -58%;
     }
-    .ContentName p{
-        margin-left: 52%;
+    .ContentName .contact a{
+        margin-top: 200px;
+    } 
+   
+} 
+ @media screen and (max-width: 1024px) {
+    .cover .ContentName{
+        position: absolute;  
+        width: 900px;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
     }
     
+    .ContentName{
+        top: 20% ;
+        left: 10%;
+        align-items: center;
+        justify-content: center;
+    }
+    .ContentName p{
+        width: 500px;
+        letter-spacing: 5px;
+        font-size: smaller;
+        font-size: 24px;
+        align-items: center;
+        justify-content: center;
+    }
+    .ContentName h1{
+        width: 500px;
+        letter-spacing: 8px;
+        font-size: medium;
+        font-size: 36px;
+        align-items: center;
+        justify-content: center;
+    }
+    .burger{
+        display: none;
+    }
+    .mypic{
+        width: 450px;
+        top: 15%;
+        right: 0%;
+    }
+    .ContentName .contact a{
+        margin-top: 250px;
+        margin-left: 0px;
+    }
 } 
-@media screen and (max-width: 830px) {
+@media (max-width: 992px){
+    .header{
+        padding: 1.3rem 5%;
+    }
+}
+@media screen and (max-width: 992px) {
     .bx {
         background: none;
     }
@@ -243,111 +241,39 @@
         margin-right: 80px;
         text-align: center;
     }
-    
-    .wordaboutme h1{
-        letter-spacing: 8px;
-        margin-left: 35%;
-        margin-top: 15%;
-        font-size: 36px;  
-    }
     .mypic{
-        display: flex;
-        width: 400px;
-        top: 20%;
-        left: 25%;  
+        width: 580px;
+        top: 80%;
+        right: 5%;
     }
-    .ContentName{
-        margin-top: 60%;
-        margin-left: 15%;
+    .cover .ContentName {
+        position: absolute;
+        width: 600px;
     }
-    .ContentName p{
-        font-size: 18px;
-        margin-left: 80px;
+    .ContentName .contact a{
+        margin-top: 30px;
+        margin-left: -45px;
     }
-  
+    .contact{
+        margin-left: 0px;
+        width: 300px;
+        color: #0e3477;
+    }
+    .contact a{
+        padding: 0px 16%;
+    }
 }
-@media screen and (max-width: 750px) {
-    .wordaboutme h1{
-        letter-spacing: 8px;
-        margin-left: 35%;
-        margin-top: 15%;
-        font-size: 36px;  
-    }
-    .mypic{
-        display: flex;
-        width: 400px;
-        top: 20%;
-        left: 25%;  
-    }
-    .ContentName{
-        margin-top: 70%;
-        margin-left: 15%;
-    }
-    .ContentName p{
-        font-size: 18px;
-        margin-left: 80px;
-    }
-  
-}
+
 @media screen and (max-width: 670px) {
-    .wordaboutme h1{
-        letter-spacing: 8px;
-        margin-left: 35%;
-        margin-top: 15%;
-        font-size: 36px;  
-    }
-    .mypic{
-        display: flex;
-        width: 350px;
-        top: 20%;
-        left: 25%;  
-    }
-    .ContentName{
-        margin-top: 80%;
-        margin-left: 15%;
-    }
-    .ContentName p{
-        font-size: 18px;
-        margin-left: 80px;
-    }
-  
-}
-@media screen and (max-width: 540px) {
-    .wordaboutme h1{
-        letter-spacing: 8px;
-        margin-left: 30%;
-        margin-top: 20%;
-        font-size: 36px;  
-    }
-    .mypic{
-        display: flex;
-        width: 350px;
-        top: 20%;
-        left: 20%;  
-    }
-    .ContentName{
-        margin-top: 90%;
-        margin-left: 5%;
-    }
-    .ContentName p{
-        font-size: 18px;
-        margin-left: 60px;
-    }
-  
-}
- @media screen and (max-width: 430px) {
     .navbar a{
         font-size: 1.1rem;
         padding: 20px
     }
     .cover .ContentName {
         position: absolute;
-        max-width: 420px;
-        margin-top: 90%;
-        margin-left: 7%;
+        width: 300px;
     }
     .ContentName{
-        width: 300px;
         top: 0% ;
         left: 10%;
         align-items: center;
@@ -355,138 +281,75 @@
     }
     .ContentName p{
         width: 300px;
+        letter-spacing: 3px;
         font-size: smaller;
-        font-size: 16px;
-        margin-left: 40px;
+        font-size: 24px;
         align-items: center;
         justify-content: center;
     }
-    .wordaboutme h1{
-        margin-left: 20%;
-        margin-top: 25%;
-        font-size: 36px;  
+    .ContentName h1{
+        width: 300px;
+        letter-spacing: 8px;
+        font-size: medium;
+        font-size: 30px;
+        align-items: center;
+        justify-content: center;
     }
     #check:checked~.navbar{
         height: 25rem;
     }
     .ContentName{
         max-width: 300px;
-        margin-top: 350px ;
-        margin-left: 20px;
+        margin-top: 125px ;
+        margin-left: -20px;
     }
     .mypic{
-        display: flex;
         width: 300px;
-        border-radius: 60px;
-        top: 18%;
-        left: 15%;  
+        border-radius: 20px;
+        position: absolute;
+        top: 125%;
+        right: -10%;  
     }
-
+    .ContentName .contact a{
+        margin-top: 20px;
+    } 
+    .contact{
+        width: 300px;
+        color: #0e3477;
+    
+    }
+    .contact a{
+        padding: 2px 15%;
+    }
 }
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 340px) {
     .ContentName p{
         width: 280px;
-
+        letter-spacing: 5px;
         font-size: smaller;
-        font-size: 18px;
-        align-items: center;
-        justify-content: center;
-    }
-    .ContentName h1{
-        width: 280px;
-        letter-spacing: 8px;
-        font-size: medium;
         font-size: 24px;
         align-items: center;
         justify-content: center;
     }
-    .wordaboutme h1{
-        margin-left: 15%;
-        margin-top: 30%;
-        width: 280px;
-        font-size: 36px;  
-    }
-    #check:checked~.navbar{
-        height: 25rem;
-    }
-    .ContentName {
-        width: 200px;
-        margin-top: 350px;
-        margin-left: 20px;
-    }
-    .ContentName p{
-        font-size: 12px;
-    }
-    .mypic{
-        display: flex;
-        width: 280px;
-        top: 18%;
-        left: 10%;  
-    }
-}
-@media screen and (max-width: 340px) {
     .ContentName h1{
         width: 280px;
         letter-spacing: 8px;
         font-size: medium;
-        font-size: 18px;
+        font-size: 28px;
         align-items: center;
         justify-content: center;
     }
-    .wordaboutme h1{
-        margin-left: 15%;
-        margin-top: 30%;
-        width: 280px;
-        font-size: 36px;  
-    }
-    #check:checked~.navbar{
-        height: 25rem;
-    }
-    .ContentName {
-        width: 200px;
-        margin-top: 300px;
-        margin-left: 0px;
-    }
-    .ContentName p{
-        font-size: 12px;
-    }
+    .ContentName .contact a{
+        margin-top: 25px;
+    } 
     .mypic{
-        display: flex;
-        width: 250px;
-        top: 18%;
-        left: 10%;  
+        width: 280px;
+        border-radius: 20px;
+        position: absolute;
+        top: 125%;
+        right: 10%;  
     }
 }
-@media screen and (max-width: 320px) {
-    .ContentName h1{
-        width: 280px;
-        letter-spacing: 8px;
-        font-size: medium;
-        font-size: 18px;
-        align-items: center;
-        justify-content: center;
-    }
-    .wordaboutme h1{
-        margin-left: 12%;
-        margin-top: 30%;
-        width: 280px;
-        font-size: 36px;  
-    }
-    #check:checked~.navbar{
-        height: 25rem;
-    }
-    .ContentName {
-        width: 200px;
-        margin-top: 300px;
-        margin-left: 0px;
-    }
-    .ContentName p{
-        font-size: 12px;
-    }
-    .mypic{
-        display: flex;
-        width: 250px;
-        top: 18%;
-        left: 10%;  
-    }
-}
+
+ 
+    
