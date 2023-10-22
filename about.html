@@ -10,29 +10,30 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
     <!-- HTML formtting Element -->
-    <div class="PortHeader">         
-        <nav>
-            <div class="texttuii">
-                <a href="port_header.html"><h1>TUII.</h1></a>
-            </div>
-            <div class="navbar-right">
-             <ul>
-                <li><a href="port_header.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="skill.html">skill</a></li>
-                <li><a href="work.html">Work</a></li>
-             </ul>
-            </div>   
-        </nav> 
+    <header class="header">
+        <a href="#" class="logo">TUII.</a>
+
+        <input type="checkbox" id="check">
+           <label for="check" class="icons">
+              <i class='bx bx-menu' style='color:#ffffff' id="menu-icon"></i>
+              <i class='bx bx-x' style='color:#ffffff' id="close-icon"></i>
+           </label>
+          <nav class="navbar"> 
+             <a href="port_header.html">Home</a> 
+             <a href="about.html">About</a>
+             <a href="skill.html">Skills</a>
+             <a href="work.html">Work</a>                  
+          </nav>
+      </header>
             <div class="wordaboutme">
                 <h1>ABOUT<span> ME</span></h1>
             </div>
-            <div class="Content">
-                <img src="img/self1.png" alt="" class="mypic">
-                <div class="text">
+            <div class="ContentName">
+                <img src="img/self1.png" alt="" class="mypic">      
                     <p>My Name is Pongsakorn Sutana</p>
                     <p>Age : 21</p>
                     <p>Gender : Male</p>
@@ -40,8 +41,7 @@
                     <p>Work : Front-End Developer & Graphic Designer</p>
                     <p>Phone : 080-9010115</p>
                     <p>Email : Pongsakornsutana@Gmail.com</p>
-                    <p>Country : Thaiand</p>
-                </div>
+                    <p>Country : Thaiand</p>   
             </div>
         </div> 
 </body>
