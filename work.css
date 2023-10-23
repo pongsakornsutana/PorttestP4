@@ -188,6 +188,7 @@
         padding: 50px;
         margin-left: 10%;
     }
+    
 }
 @media screen and (max-width: 1440px) {
     body{
@@ -535,7 +536,7 @@
         overflow: hidden;
     }
     .image__title a{
-        font-size: 16px;
+        font-size: 14px;
     }
     .wordmyskill h1{
         width: 300px;
