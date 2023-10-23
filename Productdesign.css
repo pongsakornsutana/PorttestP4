@@ -6,51 +6,65 @@
     list-style: none;
     text-decoration: none;
     color: #1E1E1E;
-    /* background-color: #F4EDED; */
+    background: #F4EDED ;
     scroll-behavior: smooth;
     /*font-size: calc(60% + 0.8vmin);*/
 }
-body{
-    background-color: #F4EDED; 
-}
-.PortHeader{
+.header{
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
-    min-height: 100vh;
-    padding: 10px 10%;
-}
-.PortHeader nav .texttuii h1{
-    width: 10%;
-    font-size: medium;
-    font-size: 48px;
-}
-nav  {
+    padding: 1.3rem 10%;
     display: flex;
-}
-nav ul{
-    display: flex;
-    align-items: center;
     justify-content: space-between;
-    margin: 20px;
-    padding: 0px 50%;
-    gap: 100px;
-}
-nav .navbar-right ul{
-    display: flex;
     align-items: center;
-    justify-content: space-between;
-    
+    z-index: 120;
 }
-nav .navbar-right ul li{
-    display: inline-block;
-    list-style: none;
-    /* margin: 0 34px; */
+.header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #1E1E1E;
+    z-index: -1;
 }
-nav ul li {
-    font-weight: 400px;
+.logo{
+    font-size: 2rem;
+    color: #fff;
+    background: none; 
+    text-decoration: none;
+    font-weight: 700;
+}
+.navbar {
+    background: none; 
+}
+.navbar a{
+    font-size: 1.15rem;
+    color: #fff;
+    background: none; 
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 5rem;
+}
+#check {
+    display: none;
+    background: none; 
+}
+.icons{
+    position: absolute;
+    right: 0;
+    font-size: 2.8rem;
+    color: #ffffff;
+    background: none; 
+    cursor: pointer;
+    display: none;
 }
 .wordmyskill h1{
     letter-spacing: 8px;
-    margin-left: 30%;
+    margin-left: 40%;
     font-size: 48px;  
 }
 .wordmyskill span{
@@ -58,7 +72,9 @@ nav ul li {
 }
 .popup-image{
     display: none;
+    background: none; 
 }
+
 .container .image-container{
     display: flex;
     flex-wrap: wrap;
@@ -101,6 +117,7 @@ nav ul li {
     font-weight: bolder;
     color: #fff;
     cursor: pointer;
+    background: none;
     z-index: 100;
 }
 .PortHeader .popup-image img{
@@ -109,190 +126,419 @@ nav ul li {
     transform: translate(-50%,-50%);
     border: 5px solid #fff;
     width: 750px;
+    /* height: 750px; */
     object-fit: cover;
 }
-@media screen and (max-width: 1440px) {
-    nav ul{
-        padding: 0px 30%;
-    }
-}
-@media screen and (max-width: 1024px) {
-    nav ul{
-        padding: 0px 20%;
-    }
-    .mypic{
-        width: 500px;
-        bottom: 15%;
-        right: 0%;  
+@media screen and (min-width: 1440px) {
+    body{
+        overflow-x: hidden; 
     }
     .wordmyskill h1{
+        margin-top: 120px;
+        margin-left: 40%; 
+    }
+    .wordmyskill span{
+        color:  #004EFF;
+    }
+    .nav-links{
+        width: 50%;
+    }
+    .burger{
+        display: none;
+    }
+    .wordmyskill h1{
+        letter-spacing: 8px;
+        margin-left: 40%;
+        font-size: 48px;  
+    }
+    .wordmyskill span{
+        color:  #004EFF;
+    }
+    .container {
+        display: grid;
+        background: none;
+        gap: 20px;
+        padding: 50px;
+        margin-left: 10%;
+    }
+    .PortHeader .popup-image span{
+        position: absolute;
+        top: 10%; right: 22%;
+        font-size: 60px;
+        font-weight: bolder;
+        color: #fff;
+        cursor: pointer;
+        background: none;
+        z-index: 100;
+    }
+}
+@media screen and (max-width: 1440px) {
+    body{
+        overflow-x: hidden; 
+    }
+    .wordmyskill h1{
+        margin-top: 120px;
+        margin-left: 40%; 
+    }
+    .wordmyskill span{
+        color:  #004EFF;
+    }
+    .nav-links{
+        width: 50%;
+    }
+    .burger{
+        display: none;
+    }
+    .wordmyskill h1{
+        letter-spacing: 8px;
+        margin-left: 40%;
+        font-size: 48px;  
+    }
+    .wordmyskill span{
+        color:  #004EFF;
+    }
+    .container {
+        display: grid;
+        background: none;
+        gap: 20px;
+        padding: 50px;
+        margin-left: 8%;
+    }
+    .PortHeader .popup-image span{
+        position: absolute;
+        top: 18%; right: 20%;
+        font-size: 60px;
+        font-weight: bolder;
+        color: #fff;
+        cursor: pointer;
+        background: none;
+        z-index: 100;
+    }
+}
+@media screen and (max-width: 1200px) {
+    body{
+        overflow-x: hidden; 
+    }
+    .wordmyskill h1{
+        margin-top: 120px;
+        margin-left: 40%; 
+    }
+    .wordmyskill span{
+        color:  #004EFF;
+    }
+    .nav-links{
+        width: 50%;
+    }
+    .burger{
+        display: none;
+    }
+    .wordmyskill h1{
+        letter-spacing: 8px;
+        margin-left: 35%;
+        font-size: 48px;  
+    }
+    .wordmyskill span{
+        color:  #004EFF;
+    }
+    .container {
+        display: grid;
+        background: none;
+        gap: 20px;
+        padding: 50px;
+        margin-left: 8%;
+    }
+}
+@media screen and (max-width: 1024px){
+    .PortHeader .popup-image span{
+        position: absolute;
+        top: 18%; right: 10%;
+        font-size: 60px;
+        font-weight: bolder;
+        color: #fff;
+        cursor: pointer;
+        background: none;
+        z-index: 100;
+    }
+}
+@media screen and (max-width: 892px) {
+    .bx {
+        background: none;
+    }
+    .icons{
+        display: inline-flex;
+        margin-right: 20px;
+        background: none; 
+    }
+    #check:checked~ .icons #menu-icon{
+        display: none;
+        background: none; 
+    }
+    .icons #close-icon {
+        display: none;
+        background: none; 
+    }
+    #check:checked~ .icons #close-icon{
+        display: block;
+        background: none; 
+    }
+    .navbar {
+        position: absolute;
+        top: 100%; left: 0;
+        width: 100%;
+        height: 0;
+        background: #1E1E1E;
+        overflow: hidden;
+        transition: .3s ease;
+    }
+    #check:checked~.navbar{
+        height: 20rem;
+    }
+    .navbar a{
+        display: block;
+        font-size: 1.5rem;
+        padding: 10px;
+        margin-right: 80px;
+        text-align: center;
+    }
+    .wordmyskill h1{
+        letter-spacing: 8px;
+        margin-left: 30%;
+        font-size: 48px;  
+    }
+    .wordmyskill span{
+        color:  #004EFF;
+    }
+    .content {
+        width: 650px;
+        height: 850px;
+        display: grid;
+        background: none;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+        padding: 50px;
+        margin-left: 10%;
+    }
+    .image {
+        position: relative;
+        overflow: hidden;
+    }
+    .image__title a{
+        font-size: 16px;
+    }
+    .image__img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform 0.25s;
+    }
+    .PortHeader .popup-image span{
+        position: absolute;
+        top: 18%; right: 5%;
+        font-size: 60px;
+        font-weight: bolder;
+        color: #fff;
+        cursor: pointer;
+        background: none;
+        z-index: 100;
+    }
+}
+@media screen and (max-width: 822px) {
+
+    .content {
+        width: 650px;
+        height: 850px;
+        display: grid;
+        background: none;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+        padding: 50px;
+        margin-left: 3%;
+    }
+    .image {
+        position: relative;
+        overflow: hidden;
+    }
+    .image__title a{
+        font-size: 16px;
+    }
+    .wordmyskill h1{
+        width: 500px;
         letter-spacing: 8px;
         margin-left: 25%;
         font-size: 48px;  
     }
+    .PortHeader .popup-image span{
+        position: absolute;
+        top: 18%; right: 5%;
+        font-size: 60px;
+        font-weight: bolder;
+        color: #fff;
+        cursor: pointer;
+        background: none;
+        z-index: 100;
+    }
 }
+@media screen and (max-width: 678px) {
 
-@media screen and (max-width: 768px) {
-    .PortHeader{
-        padding: 20px 50px;
-    }
-    .texttuii h1{
-        padding: 20px;
-    }
-    nav  {
-        display: flex;
-    }
-    nav ul{
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        margin: 20px;
-        padding: 20px 25px ;
-        gap: 80px;
+    .content {
+        width: 650px;
+        height: 850px;
+        display: grid;
+        background: none;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+        padding: 50px;
+        margin-left: 3%;
     }
     .wordmyskill h1{
-        width: 500px;
+        width: 400px;
         letter-spacing: 8px;
-        margin-left: 200px;
-        font-size: 36px; 
+        margin-left: 25%;
+        font-size: 36px;  
     }
     .PortHeader .popup-image img{
-        width: 95%;
-    }
-}
-@media screen and (max-width: 430px) {
-    body{
-        width: 430px;
-        
+        position: absolute;
+        top: 50%; left: 50%;
+        transform: translate(-50%,-50%);
+        border: 5px solid #fff;
+        width: 80%;
+        object-fit: cover;
     }
     
-    .texttuii h1{
-        padding: 20px 120px;
-    }
-    nav{
-        display: grid;
-        gap: 20px; 
-    }
-    nav ul{
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        margin: 20px;
-        padding: 0px 0%;
-        gap: 20px;
+}
+@media screen and (max-width: 540px) {
+
+    .container{
+        margin-left: 0%;
     }
     .wordmyskill h1{
-        width: 100%;
-        letter-spacing: 8px;
-        margin-left: 7%;
-        font-size: 24px;
-    }
-    .container .image-container{
-        margin-left: 0px;
-    }
-    .PortHeader .popup-image img{
-        width: 95%;
-        height: 40%;
-    }
-    .PortHeader .popup-image span {
-        position: absolute;
-        top: 240px;
-        right: 10px;
-        font-size: 60px;
-        font-weight: bolder;
-        color: #fff;
-        cursor: pointer;
-        z-index: 100;
-    }
-
-}
-
-@media screen and (max-width: 378px) {
-    .PortHeader {
-            padding: 0px 0px  ;
-            height: 100%;
-        }
-        .texttuii h1{
-            padding: 20px 180px;
-        }
-        nav{
-            display: grid;
-            margin-left: -50px;
-            gap: 5px;
-        }
-        nav ul{
-            margin: 0px;
-            padding: 10px 15%;
-            gap: 5px;
-        }
-        .wordmyskill h1{
-            padding: 10px 0px 0px 0px;
-            width: 350px;
-            letter-spacing: 8px;
-            margin-left: 10%;
-            font-size: 24px;  
-        }
-    .container .image-container{
         width: 350px;
-        margin-left: 12.5px;
+        letter-spacing: 8px;
+        margin-left: 25%;
+        font-size: 30px;  
     }
-    .PortHeader .popup-image img{
-        width: 80%;
-        height: 40%;
+  
+}
+@media screen and (max-width: 540px) {
+
+    .container{
+        margin-left: -3%;
     }
-    .PortHeader .popup-image span {
+    .wordmyskill h1{
+        width: 350px;
+        letter-spacing: 8px;
+        margin-left: 15%;
+        font-size: 30px;  
+    }
+    .PortHeader .popup-image span{
         position: absolute;
-        top: 300px;
-        right: 35px;
+        top: 30%; right: 3%;
         font-size: 60px;
         font-weight: bolder;
         color: #fff;
         cursor: pointer;
+        background: none;
         z-index: 100;
     }
-    @media screen and (max-width: 378px) {
-        .PortHeader {
-                padding: 0px 0px  ;
-                height: 100%;
-            }
-            .texttuii h1{
-                padding: 20px 180px;
-            }
-            nav{
-                display: grid;
-                margin-left: -50px;
-                gap: 5px;
-            }
-            nav ul{
-                margin: 0px;
-                padding: 10px 15%;
-                gap: 5px;
-            }
-            .wordmyskill h1{
-                padding: 10px 0px 0px 0px;
-                width: 350px;
-                letter-spacing: 8px;
-                margin-left: 10%;
-                font-size: 24px;  
-            }
-        .container .image-container{
-            width: 350px;
-            margin-left: 12.5px;
-        }
-        .PortHeader .popup-image img{
-            width: 80%;
-            height: 35%;
-        }
-        .PortHeader .popup-image span {
-            position: absolute;
-            top: 300px;
-            right: 35px;
-            font-size: 60px;
-            font-weight: bolder;
-            color: #fff;
-            cursor: pointer;
-            z-index: 100;
-        }
-
 }
+@media screen and (max-width: 420px) {
+
+    .container{
+        margin-left: -3%;
+    }
+    .wordmyskill h1{
+        width: 350px;
+        letter-spacing: 8px;
+        margin-left: 13%;
+        font-size: 30px;  
+    }
+    .PortHeader .popup-image span{
+        position: absolute;
+        top: 32%; right: 3%;
+        font-size: 60px;
+        font-weight: bolder;
+        color: #fff;
+        cursor: pointer;
+        background: none;
+        z-index: 100;
+    }
+}
+@media screen and (max-width: 400px) {
+
+    .container{
+        margin-left: -10%;
+    }
+    .wordmyskill h1{
+        width: 350px;
+        letter-spacing: 8px;
+        margin-left: 12%;
+        margin-top: 120px;
+        font-size: 24px;  
+    } 
+    
+}
+@media screen and (max-width: 396px) {
+    .container{
+        margin-left: -0%;
+    }
+    .container .image-container{
+        width: 300px;
+    }
+    .wordmyskill h1{
+        width: 300px;
+        letter-spacing: 8px;
+        margin-left: 12%;
+        margin-top: 120px;
+        font-size: 24px;  
+    } 
+    
+}
+@media screen and (max-width: 375px) {
+    .container{
+        margin-left: -3%;
+    }
+    .container .image-container{
+        width: 300px;
+    }
+    .wordmyskill h1{
+        width: 300px;
+        letter-spacing: 8px;
+        margin-left: 10%;
+        margin-top: 120px;
+        font-size: 24px;  
+    } 
+    
+}
+@media screen and (max-width: 360px) {
+    .container{
+        margin-left: -8%;
+    }
+    .container .image-container{
+        width: 300px;
+    }
+    .wordmyskill h1{
+        width: 300px;
+        letter-spacing: 8px;
+        margin-left: 8%;
+        margin-top: 120px;
+        font-size: 24px;  
+    } 
+    
+}
+@media screen and (max-width: 320px) {
+    .container{
+        margin-left: -12%;
+    }
+    .container .image-container{
+        width: 300px;
+    }
+    .wordmyskill h1{
+        width: 300px;
+        letter-spacing: 8px;
+        margin-left: 8%;
+        margin-top: 120px;
+        font-size: 24px;  
+    } 
+    
 }
